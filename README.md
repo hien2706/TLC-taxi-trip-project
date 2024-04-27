@@ -6,10 +6,11 @@
 -Output: A DB with 4 tables(3 dimension, 1 fact) ready for analysis.
 
 ## Technologies and skills
-- Workflow orchestration: Apache Airflow
-- Programming language: Python(Pandas)
+- Workflow orchestration: Apache Airflow (DAGs, Monitoring & Troubleshooting)
+- Programming language: Python(Pandas,Requests)
 - Database: PostgreSQL
-- Data Modeling: Star Schema
+- Data Modeling: Star Schema(4 steps to create dimensional model in data warehouse)
+- Concatenation: Docker(docker-compose)
 
 ## Project workflow
 
