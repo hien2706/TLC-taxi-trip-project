@@ -1,8 +1,8 @@
 # ETL-piplines-using-Airflow
 
 ## Project Overview
--This is an ETL pipeline that takes data from websites and CSV files, transforms them using Python, and finally loads them into the Postgres database in the form of star schema.
--Input: TLC trip data records, tables of zones' names and geometry, table of company affiliations' plate numbers.
+-This is an ETL pipeline that takes data from websites and CSV files, transforms them using Python, and finally loads them into the Postgres database in the form of star schema.\
+-Input: TLC trip data records, tables of zones' names and geometry, table of company affiliations' plate numbers.\
 -Output: A DB with 4 tables(3 dimension, 1 fact) ready for analysis.
 
 ## Technologies and skills
