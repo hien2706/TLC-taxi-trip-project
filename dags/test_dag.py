@@ -14,12 +14,12 @@ default_args = {
 # Define DAG details
 with DAG(
     dag_id='a_test_dag',
-    start_date=datetime(2024, 4, 19),  # Adjust as needed
+    start_date=datetime(2024, 4, 19),  
     default_args = default_args
 ) as dag:
     clean_up_csv = BashOperator(
-    task_id= 'clean_up_csv_files',
-    bash_command = 'rm /opt/airflow/data/raw_data/*.csv; rm /opt/airflow/data/cleaned_data/*.csv',
+    task_id= 'hello world',
+    bash_command = 'echo hello_world',
     dag = dag
     )
     clean_up_csv
