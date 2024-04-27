@@ -10,3 +10,5 @@ This is an ETL pipeline that takes data from websites and CSV files, transforms 
 - Data Modeling: Star Schema
 
 ## Project workflow
+
+![etl_workflow](https://github.com/hien2706/ETL-piplines-with-Airflow/blob/main/images/etl_pipeline.jpg)
