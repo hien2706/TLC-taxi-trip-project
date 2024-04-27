@@ -29,5 +29,6 @@ The project implements DAGs in Airflow to orchestrate the pipeline.
 
 ## Project graph in Airflow
 
+![airflow graph](https://github.com/hien2706/ETL-piplines-with-Airflow/blob/main/images/airflow_UI.jpg)
 
 
