@@ -10,7 +10,7 @@
 - Programming language: Python(Pandas,Requests)
 - Database: PostgreSQL
 - Data Modeling: Star Schema(4 steps to create dimensional model in data warehouse)
-- Concatenation: Docker(docker-compose)
+- Container: Docker(docker-compose)
 
 ## Project workflow
 
