@@ -1,0 +1,59 @@
+Table datetime_dim {
+  datetime_id integer [pk]
+  tpep_pickup_datetime datetime
+  pickup_year integer
+  pickup_month integer
+  pickup_day integer
+  pickup_hour integer
+  pickup_weekday varchar
+  tpep_dropoff_datetime datetime
+  dropoff_year integer
+  dropoff_month integer
+  dropoff_day integer
+  dropoff_hour integer
+  dropoff_weekday varchar
+
+}
+
+Table base_dim {
+  base_id integer [pk]
+  hvfhs_license_num varchar
+  base_num varchar
+  base_name varchar
+  licensees varchar
+}
+
+Table location_dim {
+  location_id integer [pk]
+  shape_length float
+  shape_area float
+  geometry varchar 
+  zone varchar
+  borough varchar
+  service_zone varchar
+}
+
+Table fact_table {
+  trip_id integer [pk]
+  dispatching_base_id integer [ref: > base_dim.base_id]
+  originating_base_id integer [ref: > base_dim.base_id]
+  datetime_id integer [ref: > datetime_dim.datetime_id]
+  PU_location_id integer [ref: > location_dim.location_id]
+  DO_location_id integer [ref: > location_dim.location_id]
+  trip_miles float
+  trip_time float
+  base_passenger_fare float
+  tolls float
+  bcf float
+  sales_tax float
+  congestion_surcharge float
+  airport_fee float
+  tips float
+  driver_pay float
+  shared_request_flag bit
+  shared_match_flag bit
+  access_a_ride_flag bit
+  wav_request_flag bit
+  wav_match_flag bit  
+
+}
