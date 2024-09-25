@@ -16,9 +16,8 @@
 
 ![etl_workflow](https://github.com/hien2706/ETL-piplines-with-Airflow/blob/main/images/etl_pipeline.jpg)
 
-## Data model
-
-![star schema](https://github.com/hien2706/ETL-piplines-with-Airflow/blob/main/images/hvfhs.jpeg)
+## Star schema
+![star schema](https://github.com/hien2706/TLC-taxi-trip-project/blob/main/images/star_schema.jpg)
 
 ## Project steps
 The project implements DAGs in Airflow to orchestrate the pipeline.
